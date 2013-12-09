@@ -15,7 +15,13 @@ void printList(){
 	cout <<"\nSize of array is: "<< numbers.size()<<"\n";
 }
 
+void bubbleSort(int toSort[]){
+	cout << toSort[0]<<"\n";
+}
+
 int main(){
-	printList();
+	int toSort[]={1,2,3,4};;
+	
+	bubbleSort(toSort);
 	return 0;
 }
