@@ -1,4 +1,5 @@
 import math
+
 def quicksort(input_array):
 	if len(input_array)<=1:
 		return input_array
@@ -13,7 +14,8 @@ def quicksort(input_array):
 	return quicksort(less)+[pivot]+quicksort(greater)
 
 def main():
-	print quicksort([7,3,-2.7777,6,-98,8.5,42,6,math.pi,78,0])
+	print quicksort([7,3,-2.7777,6,-98,8.5,42,6,math.pi,78,0,
+		"Why_is_there_a_string_here?","This is crazy",[1,2],(3,4,5)])
 
 if __name__ == '__main__':
 	main()
